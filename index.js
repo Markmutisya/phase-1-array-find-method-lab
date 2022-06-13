@@ -1,12 +1,17 @@
-// code your solution here
-function superbowlWin(arrayTesting){
-    let winning =(arrayTesting) => arrayTesting.result === 'W';
-    let Kushinda = arrayTesting.find(winning)
-    if(Kushinda)
-    {
-        return Kushinda.year
-    }
-    else {
-        return undefined;
+// code your solution
+const record = [
+    {year:"2015", result : "w"},
+    {year:"2014", result: "N/A"},
+    {year:"2013", result: "N/A"}
+    
+]
+function superbowlWin(output){
+    for (const object of output){
+        for (let object of output){
+            if(object.result ==="W"){
+                return object.year
+            }
+        }
     }
 }
+record.find(suoerbowlWin);
